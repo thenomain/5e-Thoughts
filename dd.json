@@ -1,0 +1,44 @@
+"abilities":{
+  "values":"0-30",
+  "types":[
+    {"name":"Strength", "desc":"measuring physical power", "abbr":"Str", "zoomer":"Yeet"},
+    {"name":"Dexterity", "desc":"measuring agility", "abbr":"Dex", "zoomer":"Kobe"},
+    {"name":"Constitution", "desc":"measuring endurance", "abbr":"Con", "zoomer":"Oof"},
+    {"name":"Intelligence", "desc":"measuring reasoning and memory", "abbr":"Int", "zoomer":"Tea"},
+    {"name":"Wisdom", "desc":"measuring perception and insight", "abbr":"Wis", "zoomer":"Yolo"},
+    {"name":"Charisma", "desc":"measuring force of personality", "abbr":"Cha", "zoomer":"Wig"},
+  ],
+}, 
+"other abilities":[
+  {"name":"Hit Points", "desc":"damage before unconsciousness", "abbr":"HP"},
+  {"name":"Armor Class", "desc":"counter to being hit", "abbr":"AC"},
+  {"name":"Initiative", "desc":"order in comabt", "abbr":"Init"},
+],
+"skills":{
+  "levels":["none","half-proficiency","proficiency","expertice"],
+  "types":[
+    {"name":"Athletics", "desc":"", "ability":["Strength"] },
+    {"name":"Acrobatics", "desc":"", "ability":["Dexterity"] },
+    {"name":"Slight of Hand", "desc":"", "ability":["Dexterity"] },
+    {"name":"Stealth", "desc":"", "ability":["Dexterity"] },
+    {"name":"Arcana", "desc":"", "ability":["Intelligence"] },
+    {"name":"History", "desc":"", "ability":["Intelligence"] },
+    {"name":"Investigation", "desc":"", "ability":["Intelligence"] },
+    {"name":"Nature", "desc":"", "ability":["Intelligence"] },
+    {"name":"Religion", "desc":"", "ability":["Intelligence"] },
+    {"name":"Animal Handling", "desc":"", "ability":["Wisdom"] },
+    {"name":"Insight", "desc":"", "ability":["Wisdom"] },
+    {"name":"Medicine", "desc":"", "ability":["Wisdom"] },
+    {"name":"Perception", "desc":"", "ability":["Wisdom"] },
+    {"name":"Survival", "desc":"", "ability":["Wisdom"] },
+    {"name":"Deception", "desc":"", "ability":["Charisma"] },
+    {"name":"Intimidation", "desc":"", "ability":["Charisma","Strength"] },
+    {"name":"Performance", "desc":"", "ability":["Charisma"] },
+    {"name":"Persuasion", "desc":"", "ability":["Charisma"] }
+  ]
+},
+"notes":[
+  "https://dnd.wizards.com/resources/systems-reference-document",
+  "https://5e.d20srd.org/index.htm",
+  "https://www.nerdsandscoundrels.com/how-to-calculate-ac-5e/"
+]
