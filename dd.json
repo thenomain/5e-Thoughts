@@ -1,44 +1,179 @@
 "abilities":{
-  "values":"0-30",
+  "values":"0 <= #VAL <= 30",
   "types":[
-    {"name":"Strength", "desc":"measuring physical power", "abbr":"Str", "zoomer":"Yeet"},
-    {"name":"Dexterity", "desc":"measuring agility", "abbr":"Dex", "zoomer":"Kobe"},
-    {"name":"Constitution", "desc":"measuring endurance", "abbr":"Con", "zoomer":"Oof"},
-    {"name":"Intelligence", "desc":"measuring reasoning and memory", "abbr":"Int", "zoomer":"Tea"},
-    {"name":"Wisdom", "desc":"measuring perception and insight", "abbr":"Wis", "zoomer":"Yolo"},
-    {"name":"Charisma", "desc":"measuring force of personality", "abbr":"Cha", "zoomer":"Wig"},
+    { "name":"Strength", "desc":"measuring physical power", "abbr":"Str", "meme":"Yeet", 
+      "chargen":{"value":1, "proficiency":"none"}
+    },
+    { "name":"Dexterity", "desc":"measuring agility", "abbr":"Dex", "meme":"Kobe", 
+      "chargen":{"value":1, "proficiency":"none"}
+    },
+    { "name":"Constitution", "desc":"measuring endurance", "abbr":"Con", "meme":"Oof", 
+      "chargen":{"value":1, "proficiency":"none"}
+    },
+    { "name":"Intelligence", "desc":"measuring reasoning and memory", "abbr":"Int", "meme":"Tea", 
+      "chargen":{"value":1, "proficiency":"none"}
+    },
+    { "name":"Wisdom", "desc":"measuring perception and insight", "abbr":"Wis", "meme":"Yolo", 
+      "chargen":{"value":1, "proficiency":"none"}
+    },
+    { "name":"Charisma", "desc":"measuring force of personality", "abbr":"Cha", "meme":"Wig", 
+      "chargen":{"value":1, "proficiency":"none"}
+    },
   ],
 }, 
-"other abilities":[
-  {"name":"Hit Points", "desc":"damage before unconsciousness", "abbr":"HP"},
-  {"name":"Armor Class", "desc":"counter to being hit", "abbr":"AC"},
-  {"name":"Initiative", "desc":"order in comabt", "abbr":"Init"},
+"derived abilities":[
+  { "name":"Hit Points", "desc":"damage before unconsciousness", "abbr":"HP"},
+  { "name":"Armor Class", "desc":"counter to being hit", "abbr":"AC"},
+  { "name":"Initiative", "desc":"order in comabt", "abbr":"Init"},
 ],
 "skills":{
-  "levels":["none","half-proficiency","proficiency","expertice"],
+  "proficiency":["none","half-proficiency","proficiency","expertice"],
   "types":[
-    {"name":"Athletics", "desc":"", "ability":["Strength"] },
-    {"name":"Acrobatics", "desc":"", "ability":["Dexterity"] },
-    {"name":"Slight of Hand", "desc":"", "ability":["Dexterity"] },
-    {"name":"Stealth", "desc":"", "ability":["Dexterity"] },
-    {"name":"Arcana", "desc":"", "ability":["Intelligence"] },
-    {"name":"History", "desc":"", "ability":["Intelligence"] },
-    {"name":"Investigation", "desc":"", "ability":["Intelligence"] },
-    {"name":"Nature", "desc":"", "ability":["Intelligence"] },
-    {"name":"Religion", "desc":"", "ability":["Intelligence"] },
-    {"name":"Animal Handling", "desc":"", "ability":["Wisdom"] },
-    {"name":"Insight", "desc":"", "ability":["Wisdom"] },
-    {"name":"Medicine", "desc":"", "ability":["Wisdom"] },
-    {"name":"Perception", "desc":"", "ability":["Wisdom"] },
-    {"name":"Survival", "desc":"", "ability":["Wisdom"] },
-    {"name":"Deception", "desc":"", "ability":["Charisma"] },
-    {"name":"Intimidation", "desc":"", "ability":["Charisma","Strength"] },
-    {"name":"Performance", "desc":"", "ability":["Charisma"] },
-    {"name":"Persuasion", "desc":"", "ability":["Charisma"] }
+    { "name":"Athletics", "desc":"", "ability":["Strength","Constitution"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Acrobatics", "desc":"", "ability":["Dexterity"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Slight of Hand", "desc":"", "ability":["Dexterity"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Stealth", "desc":"", "ability":["Dexterity"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Arcana", "desc":"", "ability":["Intelligence"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"History", "desc":"", "ability":["Intelligence"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Investigation", "desc":"", "ability":["Intelligence"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Nature", "desc":"", "ability":["Intelligence"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Religion", "desc":"", "ability":["Intelligence"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Animal Handling", "desc":"", "ability":["Wisdom"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Insight", "desc":"", "ability":["Wisdom"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Medicine", "desc":"", "ability":["Wisdom"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Perception", "desc":"", "ability":["Wisdom"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Survival", "desc":"", "ability":["Wisdom"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Deception", "desc":"", "ability":["Charisma"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Intimidation", "desc":"", "ability":["Charisma","Strength"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Performance", "desc":"", "ability":["Charisma"], 
+      "chargen":{"proficiency":"none"}
+    },
+    { "name":"Persuasion", "desc":"", "ability":["Charisma"], 
+      "chargen":{"proficiency":"none"}
+    }
   ]
 },
 "notes":[
   "https://dnd.wizards.com/resources/systems-reference-document",
   "https://5e.d20srd.org/index.htm",
-  "https://www.nerdsandscoundrels.com/how-to-calculate-ac-5e/"
+  "https://www.nerdsandscoundrels.com/how-to-calculate-ac-5e/",
+  "https://github.com/avrae/d20", "python roller",
+],
+
+"races":[
+  { "name":"Dwarf", 
+    "age":50,
+    "height":"4 to 5 feet",
+    "weight":"150 lbs.",
+    "chargen":{
+      "abilities":{"Constitution":"+2"},
+      "bio":{"Size":"Medium","Speed":25},
+      "vision":{"darkvision":"60 ft."},
+      "traits":[
+        { "name":"Dwarven Resilience",
+          "text":"You have advantage on saving throws against poison, and you have resistance against poison damage."
+        },
+        { "name":"Dwarven Combat Training",
+          "text":"You have proficiency with the battleaxe, handaxe, light hammer, and warhammer."
+        },
+        { "name":"Tool Proficiency", 
+          "text":"gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+        },
+        { "name":"Stonecutting", 
+          "text":"Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the vcheck, instead of your normal proficiency bonus."
+        }
+      ],
+      "weapons":[
+        {"name":"Battleaxe", "proficiency":"proficient"},
+        {"name":"Handaxe", "proficiency":"proficient"},
+        {"name":"Light Hammer", "proficiency":"proficient"},
+        {"name":"Warhammer", "proficiency":"proficient"}
+      ],
+      "languages":[
+        {"name":"Common", "proficiency":"proficient"},
+        {"name":"Dwarvish", "proficiency":"proficient"}
+      ],
+    },
+    "subraces":[
+      { "name":"Hill Dwarf", 
+        "chargen":{
+          "abilities":{"Wisdom":"+1"},
+          "traits":[
+            { "name":"Dwarven Toughness",
+              "text":"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+            }
+          ]
+        }
+      }
+    ]
+  },
+],
+
+"backgrounds":[
+  { "name":"Acolyte",
+    "text":"Blah blah",
+    "chargen":{
+      "skills":[
+        {"name":"Insight","proficiency":"proficient"},
+        {"name":"Religion","proficiency":"proficient"}
+      ],
+      "traits":[
+        {"name":"Languages","text":"Pick two of your choice."}
+      ], 
+      "equipment":[
+        {"name":"Holy symbol","text":"I have no idea how I'm going to do these. UUID, probably."}
+      ]
+    }
+  }
+],
+
+"feats":[
+  { "name":"Grappler",
+    "text":"stuff goes here",
+    "prereq-text":"Strength 13 or higher"
+  }
+],
+
+"classes":[
+  { "name":"Barbarian",
+    
+  }
+],
+
+"more notes":[
+  "Only use database structure for character sheets.", 
+  "Character creation and data checking should use code or code+data object."
 ]
+
